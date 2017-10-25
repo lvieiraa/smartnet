@@ -97,11 +97,65 @@ public class TopologyEventsFailCommand extends AbstractShellCommand {
         String saida5 = saida4.replace(", type", "");
         String[] saida6 = saida5.split(",");
         String saida7 = saida6[1] + saida6[2] + saida6[3];
- //  print("%s", saida7);
-      switch (saida7) {
-      case " 0000000000000003 7 true":
-      print("CAIU\n");
+   print("%s", saida6[0]);
+     switch (saida7) {
+     case " 0000000000000003 3 false":
+      print("1,3\n");
+   break;
+    case " 0000000000000001 3 false":
+      print("1,3\n");
       break;
+    case " 0000000000000002 1 false":
+      print("2,9,10,33,34,31,32");
+      break;
+    case " 0000000000000013 1 false":
+      print("2,9,10,33,34,31,32");
+      break;
+    case " 0000000000000002 2 false":
+      print("2,5,7,(8.1),23,24,25,26,30,31,34,36");
+      break;
+    case " 0000000000000014 1 false":
+      print("2,5,7,(8.1),23,24,25,26,30,31,34,36");
+     break;
+    /*case " 0000000000000002 4 fail":
+      print("1,3");
+    case " 0000000000000003 1 fail":
+      print("1,3");
+   case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+ case " 0000000000000003 1 fail":
+      print("1,3");
+
+
+      break;*/
       default:
      print("NAO CAIU'\n");
 }
